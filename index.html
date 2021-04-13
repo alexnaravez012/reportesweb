@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./data/style.css">
+    <link rel="stylesheet" href="./fontawesome-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.js"></script>
+    <title>Denlíne@</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="uk-flex uk-flex-between navbar-reports">
+        <div class="uk-flex uk-flex-middle">
+            <div uk-toggle="target: .menu-vertical-reports; cls: show" class="padding-horizontal-20">
+                <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-reports; cls: width-menu-vertical-reports"></i>
+            </div>
+            <div>
+                <img src="./data/logo1.png" class="logo-size-reports" alt="">
+            </div>
+            <div class="uk-inline">
+                <div class="cursor-pointer uk-flex uk-flex-middle" style="margin-left: 60px;">
+                    <img class="logo-store-size-reports" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down font-size-17"></i>
+                </div>
+                <div uk-drop="mode: click">
+                    <div style="position: relative;">
+                        <div class="drop-store-reports">
+                            <!-- <ul class="uk-list " style="padding-bottom: 20px;">
+                                <h6 class="uk-margin-remove font-size-10" style="width: 65px; padding-bottom: 10px;">Documento del proveedor</h6>
+                                <div class="hr-tab"></div>
+                                <button class="button-search-supplier-reports uk-text-bold">Buscar proveedor</button>
+                                <h6 class=" uk-margin-remove font-size-10">Seleccione tienda proveedora</h6>
+                                <div class="select-supplier-reports">
+                                    <select>
+                                        <option>--</option>
+                                        <option>opción 1</option>
+                                        <option>opción 2</option>
+                                        <option>opción 3</option>
+                                        <option>opción 4</option>
+                                    </select>
+                                    <div class="select_arrow-supplier-reports">
+                                    </div>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Proveedor:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">--</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Documento:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">--000</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Teléfono:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">000</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Dirección:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">N/A</h6>
+                                </div>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-inline cursor-pointer padding-horizontal-30 uk-flex uk-flex-middle">
+            <button class="button-data-user-reports uk-flex uk-flex-middle">
+                <img class="logo-user-size-reports" src="./data/user.png " alt=" ">
+                <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                <i class="fas fa-caret-down "></i>
+            </button>
+            <div uk-drop="mode: click">
+                <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-reports">
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                        <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                        <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                        <h5 class="uk-margin-remove ">94518</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Menu vertical ERP-->
+    <div style="position: relative;">
+        <div class="menu-vertical-reports">
+            <ul class="uk-list" style="padding-bottom: 20px;">
+                <div class="uk-flex uk-flex-between">
+                    <div style="margin-left: 33px;">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                        <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                    </div>
+                    <div style="padding-right: 5px;">
+                        <div uk-toggle="target: .menu-vertical-reports; cls: show" style="margin-right: 10px;">
+                            <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/7.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/8.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/9.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/10.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/11.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/12.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/13.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/15.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12" style="width: 100px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-reports">
+                        <img class="img-menu-vertical-size-reports" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Mesas</h4>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- Catalogo categorias -->
+    <div style="display: inline;">
+        <!-- Contenido -->
+        <div class="main-container-reports">
+            <div class="uk-flex uk-flex-middle navbar-search-products-reports">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; padding-top: 18px; height: 45px; border-bottom: 18px solid white;">
+                    <h4 class="uk-margin-remove uk-text-bold">Reportes</h4>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center button-categories-reports">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-top: 21px;">Reportes</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Grefico por productos</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Productos</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Categorias</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Facturación</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Caja</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Terceros</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Pedidos pendientes</h6>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex uk-flex-middle navbar-search-products-returns" style="margin-left: 60px;">
+                    <div style="margin-top: 10px;">
+                        <h6 class="uk-margin-remove font-size-11">Fecha Inicial</h6>
+                        <input class="input-date-returns font-size-12" type="date">
+                    </div>
+                    <div style="margin-top: 10px; margin-left: 30px;">
+                        <h6 class="uk-margin-remove font-size-11">Fecha Final</h6>
+                        <input class="input-date-returns font-size-12" type="date">
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione Movimiento</h6>
+                        <div class="select-create-product-returns">
+                            <select>
+                                    <option>Venta</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left: 120px;">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione intervalo</h6>
+                        <div class="select-create-product-returns">
+                            <select>
+                                    <option>Diario</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-product-select-returns">
+                </div>
+                <div class="uk-flex uk-flex-middle" style="margin-bottom: 15px; padding-top: -5px; margin-left: 60px;">
+                    <div>
+                        <h6 class="uk-margin-remove font-size-11">Seleccione linea</h6>
+                        <div class="select-create-product-returns" style="width: 140px; margin-right: 30px;">
+                            <select>
+                                <option>Abarrotes</option>
+                                <option>opción 1</option>
+                                <option>opción 2</option>
+                                <option>opción 3</option>
+                                <option>opción 4</option>
+                            </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 3px;">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione categoria</h6>
+                        <div class="select-create-product-returns" style="width: 140px !important; margin-right: 30px;">
+                            <select>
+                                <option>Cereales</option>
+                                <option>opción 1</option>
+                                <option>opción 2</option>
+                                <option>opción 3</option>
+                                <option>opción 4</option>
+                            </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 3px;">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione producto</h6>
+                        <div class="select-create-product-returns" style="width: 240px !important;">
+                            <select>
+                                <option>Nestum Trigomiel Nestle x30gr</option>
+                                <option>opción 1</option>
+                                <option>opción 2</option>
+                                <option>opción 3</option>
+                                <option>opción 4</option>
+                            </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="button-search-returns uk-text-bold" style="color: rgb(2, 2, 199); width: 150px;">Generar Reporte</button>
+                    </div>
+                </div>
+                <div class="navbar-product-select-returns">
+                </div>
+            </div>
+            <div style="padding-right: 20px; padding-left: 20px;">
+                <canvas id="myChart" height="72"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- Catalogo marcas -->
+    <div style="display: none;">
+        <div class="main-container-reports">
+            <div class="uk-flex uk-flex-middle navbar-search-products-reports">
+                <div style="padding-left: 40px; margin-right: 40px;">
+                    <h4 class="uk-margin-remove uk-text-bold">Catálogo de productos</h4>
+                </div>
+                <div style="margin-left: 50px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Categorías</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center button-trademark-reports" style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-top: 21px;">Marcas</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Unidades de medida</h6>
+                </div>
+            </div>
+            <div style="padding-left: 20px; padding-top: 60px;" uk-grid>
+                <div style="margin-right: -15px !important;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">100%</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">1st Endurance</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">3D</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Problems</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ABBOTT</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ABUS</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ACDELCO</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ACQUA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADAMS</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADIDAS</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADORO</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADIDAS</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADORO</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADVIL</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AG</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUARDIENTE NECTAR</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUILA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUILA ROJA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJAX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADVIL</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AG</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJINOMEN</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJOVER</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK1</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AKURO</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Al Fresco</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alamar</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aldor</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alimentos Polar</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK1</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alival</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Mac</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Santa Elena</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALKALINA TRONEX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALL NATURAL</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Mac</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -13px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-13 font-weight-500 width-90 uk-text-center">Aliños Santa Elena</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-reports"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Unidades de medida -->
+    <div style="display: none;">
+        <div class="main-container-reports">
+            <div class="uk-flex uk-flex-middle navbar-search-products-reports">
+                <div style="padding-left: 40px; margin-right: 40px;">
+                    <h4 class="uk-margin-remove uk-text-bold">Catálogo de productos</h4>
+                </div>
+                <div style="margin-left: 20px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Categorías</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Marcas</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center button-trademark-reports" style="margin-left: 55px; width: 190px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center " style="padding-top: 21px; ">Unidades de medida</h6>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <div class="uk-flex uk-flex-middle" style="margin-top: 15px; margin-bottom: 15px; margin-left: 5px;">
+                            <div>
+                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-add-unit-measurement">Agregar</button>
+                                <div id="modal-add-unit-measurement" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-reports">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Agregando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-reports" type="text" placeholder="Descripción">
+                                        </div>
+                                        <button class="buttons-add-category-reports">Agregar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-150">Nombre</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-150" style="padding-left: 5px;">Descripción</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-80" style="padding-left: 120px;">Opciones</h6>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">(Tercio, 33 CL)</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">(Tercio, 33 CL)</h6>
+                            <div>
+                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-reports">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-reports" type="text" placeholder="(Tercio, 33 CL.)">
+                                        </div>
+                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">#N/A</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">#N/A</h6>
+                            <div>
+                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement-1" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement-1" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-reports">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-reports" type="text" placeholder="#N/A">
+                                        </div>
+                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1 PAR</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1 PAR</h6>
+                            <div>
+                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement-2" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement-2" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-reports">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-reports" type="text" placeholder="1 PAR">
+                                        </div>
+                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.5 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.5 ml</h6>
+                            <div>
+                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement-3" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement-3" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-reports">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-reports" type="text" placeholder="1.5 ml">
+                                        </div>
+                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.75 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.75 ml</h6>
+                            <div>
+                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement-4" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement-4" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-reports">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-reports" type="text" placeholder="1.75 ml">
+                                        </div>
+                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.78 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.78 ml</h6>
+                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
+                        </div>
+                        <div class="hr-ta-hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">10 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">10 ml</h6>
+                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">100 UND</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">100 UND</h6>
+                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">110 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">110 ml</h6>
+                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">120 gr</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">120 gr</h6>
+                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: [
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+                '2016',
+            ],
+            datasets: [{
+                label: 'Venta',
+                backgroundColor: '#37C923',
+                borderColor: 'gray',
+                data: [7, , 8, 5, 2, 8, 10, , 7, 4, , 9, 5]
+            }, ]
+        },
+        options: {
+            responsive: true
+        }
+    });
+</script>
+
+</html>
