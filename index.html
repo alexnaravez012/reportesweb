@@ -156,7 +156,7 @@
         </div>
     </div>
     <!-- Catalogo categorias -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!-- Contenido -->
         <div class="main-container-reports">
             <div class="uk-flex uk-flex-middle navbar-search-products-reports">
@@ -285,462 +285,98 @@
         </div>
     </div>
     <!-- Catalogo marcas -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <div class="main-container-reports">
             <div class="uk-flex uk-flex-middle navbar-search-products-reports">
-                <div style="padding-left: 40px; margin-right: 40px;">
-                    <h4 class="uk-margin-remove uk-text-bold">Catálogo de productos</h4>
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Reportes</h4>
                 </div>
-                <div style="margin-left: 50px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Categorías</h6>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 70px;">Reportes</h6>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-center button-trademark-reports" style="margin-left: 45px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-top: 21px;">Marcas</h6>
+                <div class="button-trademark-reports uk-flex uk-flex-middle uk-flex-center" style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Gráfico por productos</h6>
                 </div>
                 <div style="margin-left: 55px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Unidades de medida</h6>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Productos</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Categorias</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Facturación</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Caja</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Terceros</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Pedidos pendientes</h6>
                 </div>
             </div>
-            <div style="padding-left: 20px; padding-top: 60px;" uk-grid>
-                <div style="margin-right: -15px !important;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
+            <div>
+                <div class="uk-flex uk-flex-middle navbar-search-products-returns" style="margin-left: 60px;">
+                    <div style="margin-top: 10px;">
+                        <h6 class="uk-margin-remove font-size-11">Fecha Inicial</h6>
+                        <input class="input-date-returns font-size-12" type="date">
                     </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">100%</h6>
+                    <div style="margin-top: 10px; margin-left: 30px;">
+                        <h6 class="uk-margin-remove font-size-11">Fecha Final</h6>
+                        <input class="input-date-returns font-size-12" type="date">
                     </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
+                    <div style="margin-left: 35px;">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione Movimiento</h6>
+                        <div class="select-create-product-returns">
+                            <select>
+                                    <option>Venta</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
                     </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">1st Endurance</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">3D</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Problems</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ABBOTT</h6>
+                    <div style="margin-left: 35px;">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione intervalo</h6>
+                        <div class="select-create-product-returns">
+                            <select>
+                                    <option>Diario</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ABUS</h6>
-                    </div>
+                <div class="navbar-product-select-returns">
                 </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ACDELCO</h6>
-                    </div>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <h6 class="uk-margin-remove">Ventas</h6>
+                <div>
+                    <h6 class="uk-margin-remove">Total</h6>
                 </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ACQUA</h6>
-                    </div>
+                <div>
+                    <h6 class="uk-margin-remove">Subotal</h6>
                 </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADAMS</h6>
-                    </div>
+                <div>
+                    <h6 class="uk-margin-remove">Tax</h6>
                 </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADIDAS</h6>
-                    </div>
+                <div class="uk-flex uk-flex-middle">
+                    <i class="fas fa-search color-blue " style="font-size: 15px; padding-right: 10px ; "></i>
+                    <form class="uk-search uk-search-medium ">
+                        <input class="uk-search-input uk-text-light uk-text-left form-search-reports" type="search " placeholder="Buscador de productos ">
+                    </form>
                 </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADORO</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADIDAS</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADORO</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADVIL</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AG</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUARDIENTE NECTAR</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUILA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUILA ROJA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJAX</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJE</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADVIL</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AG</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJINOMEN</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJOVER</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK1</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AKURO</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Al Fresco</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alamar</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aldor</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alimentos Polar</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK1</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alival</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Mac</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Santa Elena</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALKALINA TRONEX</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALL NATURAL</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Mac</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -13px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-13 font-weight-500 width-90 uk-text-center">Aliños Santa Elena</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
-                    </div>
-                </div>
-                <div style="margin-right: -15px !important; height: 68px;">
-                    <div>
-                        <button class="buttons-select-trademarks-reports"></button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
-                    </div>
+                <div>
+                    <button class="button-cancel-movement-reports">Filtros</button>
                 </div>
             </div>
         </div>
@@ -969,27 +605,16 @@
                 '2016',
                 '2016',
                 '2016',
-                '2016',
-                '2016',
-                '2016',
-                '2016',
-                '2016',
-                '2016',
-                '2016',
-                '2016',
-                '2016',
-                '2016',
-                '2016',
             ],
             datasets: [{
                 label: 'Venta',
                 backgroundColor: '#37C923',
                 borderColor: 'gray',
-                data: [7, , 8, 5, 2, 8, 10, , 7, 4, , 9, 5]
+                data: [600000, , , 400000, 200000, , , 500000, , , , , 700000, , , 300000],
             }, ]
         },
         options: {
-            responsive: true
+            responsive: true,
         }
     });
 </script>
