@@ -1618,3 +1618,23 @@
 .button-search-returns:focus {
     outline: 0;
 }
+
+.select-grafics-returns {
+    border-radius: 0px !important;
+    border: 1px solid rgb(155, 155, 155) !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin-right: 15px !important;
+}
+
+.select-grafics-returns:focus {
+    background-color: black !important;
+}
+
+.box-color-grafics-returns {
+    width: 4px;
+    height: 12px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}

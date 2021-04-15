@@ -285,7 +285,7 @@
         </div>
     </div>
     <!-- Catalogo marcas -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <div class="main-container-reports">
             <div class="uk-flex uk-flex-middle navbar-search-products-reports">
                 <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
@@ -359,215 +359,134 @@
                 </div>
             </div>
             <div class="uk-flex uk-flex-middle">
-                <h6 class="uk-margin-remove">Ventas</h6>
-                <div>
-                    <h6 class="uk-margin-remove">Total</h6>
-                </div>
-                <div>
-                    <h6 class="uk-margin-remove">Subotal</h6>
-                </div>
-                <div>
-                    <h6 class="uk-margin-remove">Tax</h6>
+                <h6 class="uk-margin-remove uk-text-bold font-size-12" style="padding-left: 40px;">VENTAS</h6>
+                <div class="uk-flex uk-flex-middle" style="margin-left: 20px;">
+                    <h6 class="uk-margin-remove font-size-10 uk-text-bold">Total</h6>
+                    <div class="box-color-grafics-returns" style="background-color: green;"></div>
+                    <label><input class="uk-radio select-grafics-returns" type="radio" name="radio1"></label><br>
                 </div>
                 <div class="uk-flex uk-flex-middle">
-                    <i class="fas fa-search color-blue " style="font-size: 15px; padding-right: 10px ; "></i>
+                    <h6 class="uk-margin-remove font-size-10 uk-text-bold">Subotal</h6>
+                    <div class="box-color-grafics-returns" style="background-color: blue;"></div>
+                    <label><input class="uk-radio select-grafics-returns" type="radio" name="radio1"></label><br>
+                </div>
+                <div class="uk-flex uk-flex-middle">
+                    <h6 class="uk-margin-remove font-size-10 uk-text-bold">Tax</h6>
+                    <div class="box-color-grafics-returns" style="background-color: red;"></div>
+                    <label><input class="uk-radio select-grafics-returns" type="radio" name="radio1"></label><br>
+                </div>
+                <div class="uk-flex uk-flex-middle" style="margin-left: 25px;">
+                    <i class="fas fa-search color-blue " style="font-size: 15px; padding-right: 10px;"></i>
                     <form class="uk-search uk-search-medium ">
                         <input class="uk-search-input uk-text-light uk-text-left form-search-reports" type="search " placeholder="Buscador de productos ">
                     </form>
                 </div>
-                <div>
+                <div style="margin-left: 20px;">
                     <button class="button-cancel-movement-reports">Filtros</button>
                 </div>
+            </div>
+            <div>
+                <canvas id="myChart1" height="79"></canvas>
             </div>
         </div>
     </div>
     <!-- Unidades de medida -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <div class="main-container-reports">
             <div class="uk-flex uk-flex-middle navbar-search-products-reports">
-                <div style="padding-left: 40px; margin-right: 40px;">
-                    <h4 class="uk-margin-remove uk-text-bold">Catálogo de productos</h4>
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Reportes</h4>
                 </div>
-                <div style="margin-left: 20px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Categorías</h6>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 70px;">Reportes</h6>
                 </div>
                 <div style="margin-left: 45px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Marcas</h6>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Gráfico por productos</h6>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-center button-trademark-reports" style="margin-left: 55px; width: 190px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center " style="padding-top: 21px; ">Unidades de medida</h6>
+                <div class="button-trademark-reports uk-flex uk-flex-middle uk-flex-center" style="margin-left: 40px; width: 150px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Productos</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Categorias</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Facturación</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Caja</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Terceros</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Pedidos pendientes</h6>
                 </div>
             </div>
             <div>
-                <div>
-                    <div>
-                        <div class="uk-flex uk-flex-middle" style="margin-top: 15px; margin-bottom: 15px; margin-left: 5px;">
-                            <div>
-                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-add-unit-measurement">Agregar</button>
-                                <div id="modal-add-unit-measurement" uk-modal>
-                                    <div class="uk-modal-dialog modal-add-measurement-reports">
-                                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Agregando unidad de medida</h3>
-                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
-                                        </div>
-                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
-                                        <div class="uk-flex uk-flex-column">
-                                            <input class="inputs-add-category-reports" type="text" placeholder="Descripción">
-                                        </div>
-                                        <button class="buttons-add-category-reports">Agregar unidad de medida</button>
-                                    </div>
-                                </div>
+                <div class="uk-flex uk-flex-middle navbar-search-products-returns" style="width: 100% !important;">
+                    <div style="">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione Movimiento</h6>
+                        <div class="select-create-product-returns">
+                            <select>
+                                    <option>Venta</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-returns">
                             </div>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-150">Nombre</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-150" style="padding-left: 5px;">Descripción</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-80" style="padding-left: 120px;">Opciones</h6>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">(Tercio, 33 CL)</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">(Tercio, 33 CL)</h6>
-                            <div>
-                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement" style="margin-left: 135px;">Editar</button>
-                                <div id="modal-edit-unit-measurement" uk-modal>
-                                    <div class="uk-modal-dialog modal-add-measurement-reports">
-                                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
-                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
-                                        </div>
-                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
-                                        <div class="uk-flex uk-flex-column">
-                                            <input class="inputs-add-category-reports" type="text" placeholder="(Tercio, 33 CL.)">
-                                        </div>
-                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">#N/A</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">#N/A</h6>
-                            <div>
-                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement-1" style="margin-left: 135px;">Editar</button>
-                                <div id="modal-edit-unit-measurement-1" uk-modal>
-                                    <div class="uk-modal-dialog modal-add-measurement-reports">
-                                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
-                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
-                                        </div>
-                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
-                                        <div class="uk-flex uk-flex-column">
-                                            <input class="inputs-add-category-reports" type="text" placeholder="#N/A">
-                                        </div>
-                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1 PAR</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1 PAR</h6>
-                            <div>
-                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement-2" style="margin-left: 135px;">Editar</button>
-                                <div id="modal-edit-unit-measurement-2" uk-modal>
-                                    <div class="uk-modal-dialog modal-add-measurement-reports">
-                                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
-                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
-                                        </div>
-                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
-                                        <div class="uk-flex uk-flex-column">
-                                            <input class="inputs-add-category-reports" type="text" placeholder="1 PAR">
-                                        </div>
-                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.5 ml</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.5 ml</h6>
-                            <div>
-                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement-3" style="margin-left: 135px;">Editar</button>
-                                <div id="modal-edit-unit-measurement-3" uk-modal>
-                                    <div class="uk-modal-dialog modal-add-measurement-reports">
-                                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
-                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
-                                        </div>
-                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
-                                        <div class="uk-flex uk-flex-column">
-                                            <input class="inputs-add-category-reports" type="text" placeholder="1.5 ml">
-                                        </div>
-                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.75 ml</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.75 ml</h6>
-                            <div>
-                                <button class="button-cancel-movement-reports" uk-toggle="target: #modal-edit-unit-measurement-4" style="margin-left: 135px;">Editar</button>
-                                <div id="modal-edit-unit-measurement-4" uk-modal>
-                                    <div class="uk-modal-dialog modal-add-measurement-reports">
-                                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
-                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
-                                        </div>
-                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
-                                        <div class="uk-flex uk-flex-column">
-                                            <input class="inputs-add-category-reports" type="text" placeholder="1.75 ml">
-                                        </div>
-                                        <button class="buttons-add-category-reports">Editar unidad de medida</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.78 ml</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.78 ml</h6>
-                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
-                        </div>
-                        <div class="hr-ta-hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">10 ml</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">10 ml</h6>
-                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">100 UND</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">100 UND</h6>
-                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">110 ml</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">110 ml</h6>
-                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
-                        </div>
-                        <div class="hr-tab-list"></div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
-                            <h6 class="width-110"></h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">120 gr</h6>
-                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">120 gr</h6>
-                            <button class="button-cancel-movement-reports" style="margin-left: 135px;">Editar</button>
                         </div>
                     </div>
+                    <div style="">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione intervalo</h6>
+                        <div class="select-create-product-returns">
+                            <select>
+                                    <option>Diario</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="">
+                        <h6 class="uk-margin-remove font-size-11">Seleccione intervalo</h6>
+                        <div class="select-create-product-returns">
+                            <select>
+                                    <option>Diario</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-returns">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <h6 class="uk-margin-remove font-size-11">Fecha Inicial</h6>
+                        <input class="input-date-returns font-size-12" type="date">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <h6 class="uk-margin-remove font-size-11">Fecha Final</h6>
+                        <input class="input-date-returns font-size-12" type="date">
+                    </div>
+                    <div>
+                        <input type="text" name="">
+                    </div>
+                    <div class="uk-flex uk-flex-middle">
+                        <button>General</button>
+                        <button>Excel</button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle">
+                        <h6 class="uk-margin-remove">N° Productos:</h6>
+                        <h6 class="uk-margin-remove">1</h6>
+                    </div>
+                </div>
+                <div class="navbar-product-select-returns">
                 </div>
             </div>
         </div>
@@ -615,6 +534,57 @@
         },
         options: {
             responsive: true,
+        }
+    });
+</script>
+<script>
+    var ctx = document.getElementById('myChart1').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Aceite fino x1000ml',
+                'ponque bimbo',
+                'Limpia ropa color',
+                'Detergente',
+                'Limpia ropa color',
+                'Jugo lulo hit',
+                'Guisamac',
+                'Maiz tierno',
+                'Leche entera',
+                'Sh Reconst',
+                'Aceite fino',
+                'Ponque bimbo',
+                'Limpia ropa color',
+                'Detergente',
+                'Limpia ropa color',
+                'Jugo lulo hit',
+                'Guisamac',
+                'Maiz tierno',
+                'Limpia ropa color',
+                'Detergente',
+                'Limpia ropa color',
+                'Jugo lulo hit',
+                'Guisamac',
+                'Maiz tierno',
+            ],
+            datasets: [{
+                label: '',
+                data: [100000, 0, 200000, 0, 50000, 500000, 0, 0, 10000, 400000],
+                backgroundColor: [
+                    '#37C923',
+                ],
+                borderColor: [
+                    '#37C923',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
         }
     });
 </script>
