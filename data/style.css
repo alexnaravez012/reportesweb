@@ -18,6 +18,10 @@
     color: rgb(156, 156, 156);
 }
 
+.color-red {
+    color: red;
+}
+
 .color-green-minus-plus {
     color: rgb(1, 185, 1);
 }
@@ -261,7 +265,7 @@
 
 .form-search-reports::placeholder {
     color: #3a6193 !important;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .button-search-reports {
@@ -1177,10 +1181,10 @@
     outline: 0;
     border: none;
     font-size: 12px;
-    border-bottom: 1px solid rgb(2, 2, 197) !important;
+    border-bottom: 1px solid rgba(2, 2, 197, 0.377) !important;
     border-radius: 0px;
     background: #ffffff;
-    color: rgb(2, 2, 197);
+    color: rgba(2, 2, 197, 0.493);
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1499,6 +1503,15 @@
     box-shadow: none;
 }
 
+.button-trademark-boxs-reports {
+    width: 180px;
+    height: 45px;
+    border-bottom: 15px solid white !important;
+    box-shadow: none;
+    border-left: 2px solid rgba(158, 158, 158, 0.137);
+    border-right: 2px solid rgba(158, 158, 158, 0.137);
+}
+
 .buttons-select-trademarks-reports {
     height: 70px;
     width: 96px;
@@ -1666,4 +1679,57 @@
 
 .buttons-products-reports:focus {
     outline: 0;
+}
+
+.select-store-box-reports {
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    border: none !important;
+    margin-bottom: 20px;
+}
+
+.select-store-box-reports select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 2px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(2, 2, 197, 0.377) !important;
+    border-radius: 0px;
+    background: #ffffff;
+    color: rgba(2, 2, 197, 0.493);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-store-box-reports select::-ms-expand {
+    display: none;
+}
+
+.select-store-box-reports select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-store-box-reports {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: rgb(2, 2, 197) transparent transparent transparent;
+}
+
+.select-store-box-reports select:hover~.select_arrow-store-box-reports,
+.select-store-box-reports select:focus~.select_arrow-store-box-reports {
+    border-top-color: #000000;
+}
+
+.select-store-box-reports select:disabled~.select_arrow-store-box-reports {
+    border-top-color: #cccccc;
 }
