@@ -1749,3 +1749,11 @@
 .buttons-generate-reports:focus {
     outline: 0;
 }
+
+.button-pendients-reports {
+    width: 300px;
+    height: 45px;
+    border-bottom: 30px solid white !important;
+    box-shadow: -2px -6px 5px 0px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: none;
+}
