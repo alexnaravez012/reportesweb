@@ -7,7 +7,7 @@
 }
 
 .color-blue {
-    color: #3a6193;
+    color: #3B6093;
 }
 
 .color-green {
@@ -257,8 +257,8 @@
 }
 
 .form-search-reports {
-    color: #3a6193 !important;
-    border-bottom: 1px solid #3a6193a1 !important;
+    color: #3B6093 !important;
+    border-bottom: 1px solid #85bcff !important;
     font-size: 18px;
     width: 200px !important;
 }
@@ -1047,9 +1047,9 @@
 
 .input-date-reports {
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 182);
+    border-bottom: 1px solid #85bcff;
     width: 140px;
-    color: rgb(0, 0, 182);
+    color: #3B6093;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -1181,10 +1181,10 @@
     outline: 0;
     border: none;
     font-size: 12px;
-    border-bottom: 1px solid rgba(2, 2, 197, 0.377) !important;
+    border-bottom: 1px solid #85bcff !important;
     border-radius: 0px;
     background: #ffffff;
-    color: rgba(2, 2, 197, 0.493);
+    color: #3B6093;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1206,7 +1206,7 @@
     pointer-events: none;
     border-style: solid;
     border-width: 6px 3px 0px 5px;
-    border-color: rgb(2, 2, 197) transparent transparent transparent;
+    border-color: #3B6093 transparent transparent transparent;
 }
 
 .select-create-product-reports select:hover~.select_arrow-create-product-reports,
@@ -1410,7 +1410,7 @@
 
 .button-cancel-movement-reports {
     border: 1px solid rgba(189, 189, 189, 0.822);
-    color: rgb(0, 0, 167);
+    color: #3B6093;
     border-radius: 10px;
     background-color: white;
     height: 33px;
@@ -1555,10 +1555,10 @@
     outline: 0;
     border: none;
     font-size: 12px;
-    border-bottom: 1px solid rgba(2, 2, 197, 0.5) !important;
+    border-bottom: 1px solid #85bcff !important;
     border-radius: 0px;
     background: #ffffff;
-    color: rgba(2, 2, 197, 0.5);
+    color: #3B6093;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1580,12 +1580,12 @@
     pointer-events: none;
     border-style: solid;
     border-width: 6px 3px 0px 5px;
-    border-color: rgba(2, 2, 197, 0.404) transparent transparent transparent;
+    border-color: #3B6093 transparent transparent transparent;
 }
 
 .select-create-product-returns select:hover~.select_arrow-create-product-returns,
 .select-create-product-returns select:focus~.select_arrow-create-product-returns {
-    border-top-color: rgba(2, 2, 197, 0.404);
+    border-top-color: #3B6093;
 }
 
 .select-create-product-returns select:disabled~.select_arrow-create-product-returns {
@@ -1599,9 +1599,9 @@
 
 .input-date-returns {
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 182, 0.459);
+    border-bottom: 1px solid #85bcff;
     width: 140px;
-    color: rgba(0, 0, 182, 0.527);
+    color: #3B6093;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -1697,10 +1697,10 @@
     outline: 0;
     border: none;
     font-size: 11px;
-    border-bottom: 1px solid rgba(2, 2, 197, 0.377) !important;
+    border-bottom: 1px solid #85bcff !important;
     border-radius: 0px;
     background: #ffffff;
-    color: rgba(2, 2, 197, 0.493);
+    color: #3B6093;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1722,7 +1722,7 @@
     pointer-events: none;
     border-style: solid;
     border-width: 6px 3px 0px 5px;
-    border-color: rgb(2, 2, 197) transparent transparent transparent;
+    border-color: #3B6093 transparent transparent transparent;
 }
 
 .select-store-box-reports select:hover~.select_arrow-store-box-reports,
@@ -1736,9 +1736,8 @@
 
 .buttons-generate-reports {
     background-color: white;
-    border: 1px solid green;
+    border: 1px solid rgba(0, 128, 0, 0.466);
     border-radius: 10px;
-    border-top: 1px solid rgba(219, 219, 219, 0.705) !important;
     height: 30px;
     font-size: 11px;
     font-weight: 700;
